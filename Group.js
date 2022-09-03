@@ -42,7 +42,7 @@ class Group {
   }
 }
 
-let group = new Group([10, 20]);
+let group = new Group();
 console.log(group);
 //let group = Group.from([10, 20]);
 console.log(group.has(10));
@@ -62,3 +62,8 @@ group.delete(10);
 console.log("has, true", group.has(10));
 console.log("has, false", group.has(5));
 console.log(group);
+
+let gp = Group.from([50, 80]);
+console.log(gp);
+gp.has2(60);
+gp.has2(30);
