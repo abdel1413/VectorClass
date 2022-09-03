@@ -33,6 +33,9 @@ class Group {
   }
 
   //the from method to loop over and get values
+  //Note we  use static to create new instance of group object
+  //we don't need to create a new instanciation
+  //we can just use this one like let gp = Group.from([20,50])
   static from(collection) {
     let group = new Group();
     for (let value of collection) {
